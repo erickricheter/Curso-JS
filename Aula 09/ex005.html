@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Doom Project</title>
+
+    <style>
+      body {
+        background-color: powderblue;
+        font-size: 20pt;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="primeiro">Primeiro projeto com doom</h1>
+    <p class="doom">
+      Esse aqui é um exemplo com o <strong>Doom</strong> em negrito
+    </p>
+    <p id="idpd">Aqui vou fazer uma pequena soma:</p>
+
+    <script>
+      var frase = document.getElementsByTagName("p")[1]; // esse método pega o elementos pelo seu nome em tag
+      document.writeln(`E a minha frase concatenada é ${frase.innerHTML} <br>`);
+      document.writeln(
+        "Vou realizar a soma entre o numero 12 e 24 por JS:<br>"
+      );
+      var soma = 12 + 24;
+      document.write(soma);
+      document.write("<br>Aqui vou utilizar o conceito de Ternário<br>");
+      var numero = prompt("Coloque um numero");
+      var soma2 = numero > 10 ? 100 : 120;
+      document.write(soma2);
+      document.getElementById("primeiro").style.background = "green";
+      var a = (document.getElementsByClassName("doom")[0].style.color = "red");
+      document.querySelector("p#idpd").style.background = "white";
+    </script>
+  </body>
+</html>
